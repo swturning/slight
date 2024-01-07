@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functionDefinition>function
+    <identifier>destroyContract</identifier>
+            <parameterList>(
+                <parameter>
+                  <typeName>
+                     <elementaryTypeName>address payable</elementaryTypeName>
+                  </typeName>
+                  <identifier>recipient</identifier>
+               </parameter>)
+            </parameterList>
+            <identifier>OnlyMy</identifier>
+   <visibleType>public</visibleType>
+            <returnsParameters>returns<parameterList>(<parameter>
+                     <typeName>
+                        <elementaryTypeName>uint256</elementaryTypeName>
+                     </typeName>
+                  </parameter>)</parameterList>
+            </returnsParameters>
+            <block>{<statement>
+                  <simpleStatement>
+                     <expressionStatement>
+                        <expression>
+                           <functionCall>
+                              <functionName>
+                                 <identifier>selfdestruct</identifier>
+                              </functionName>
+                              <callArguments>(<expression>
+                                    <primaryExpression>
+                                       <identifier>recipient</identifier>
+                                    </primaryExpression>
+                                 </expression>)</callArguments>
+                           </functionCall>
+                        </expression>
+                     </expressionStatement>
+                  </simpleStatement>;</statement>
+               <statement>
+                  <returnStatement>return<expression>
+                        <primaryExpression>
+                           <numberLiteral>
+                              <decimalNumber>1</decimalNumber>
+                           </numberLiteral>
+                        </primaryExpression>
+                     </expression>
+                  </returnStatement>;</statement>}</block>
+         </functionDefinition>

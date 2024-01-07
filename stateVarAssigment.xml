@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contractPartDefinition>
+         <stateVariableDeclaration>
+            <typeName>
+               <elementaryTypeName>bool</elementaryTypeName>
+            </typeName>
+            <visibleType>public</visibleType>
+            <identifier>a</identifier>=<expression>
+               <primaryExpression>
+                  <booleanLiteral>false</booleanLiteral>
+               </primaryExpression>
+            </expression>;</stateVariableDeclaration>
+      </contractPartDefinition>
